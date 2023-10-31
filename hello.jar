@@ -1,0 +1,12 @@
+import static spark.Spark.*;
+
+public class HelloWorldApp {
+    public static void main(String[] args) {
+        // Set the port for the web server
+        port(8080);
+
+        // Define a route that responds with "Hello, World!"
+        get("/", (req, res) -> "Hello, World!");
+    }
+}
+
